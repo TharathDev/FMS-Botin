@@ -64,7 +64,7 @@ exports.postProduct = (req, res, next) => {
     });
     pizza.save().then(result=>{
         console.log('Pizza is created');
-        res.redirect('/admin-page');
+        res.redirect('/admin-page/1');
     }).catch(err=>{
         console.log(err);
     })

@@ -57,7 +57,7 @@ exports.createPizza = (req, res) =>{
         });
         addPizza.save().then(result=>{
             console.log('Add is done');
-            res.redirect('/admin-page');
+            res.redirect('/admin-Page/1');
         }).catch(err=>{
             console.log(err);
         })

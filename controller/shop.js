@@ -29,7 +29,7 @@ exports.getCart = (req, res, next) => {
 exports.editfile = (req, res, next) => {
     console.log(req.body.prodId);
 
-    //res.redirect('/admin-page');
+    //res.redirect('/admin-Page');
     const id= req.body.prodId;
     console.log(id)
     Pizza.findById(id)
@@ -44,13 +44,13 @@ exports.deleteById = (req, res, next) => {
     console.log('hi')
     console.log(req.body.prodId);
 
-    //res.redirect('/admin-page');
+    //res.redirect('/admin-Page');
     const id= req.body.prodId;
     console.log(id)
     Pizza.findByIdAndDelete(id)
     .then(result=>{
         console.log(result)
-        res.redirect('/admin-page')
+        res.redirect('/admin-Page/1')
     }).catch(error=>{
         console.log(error)
     })

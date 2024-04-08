@@ -194,7 +194,7 @@ form input{
 .reviewer_name {
     color:white;
     font-size: medium;
-    margin-right: 15px;
+    /* margin-right: 15px; */
     
 }
 #price{
