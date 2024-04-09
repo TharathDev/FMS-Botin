@@ -138,7 +138,7 @@ exports.getPurchase = (req, res, next) => {
 }
 
 exports.getadminPage = async (req, res, next) => {
-    var perPage = 5
+    var perPage = 7
     var page = req.params.page || 1
     if (req.cookies["username"] == "admin2021") {
         addPizza.countDocuments().then(count => {
